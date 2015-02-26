@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: url('images/gradient.jpg') no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+	background-size: cover;
+	background-position: top center; 
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+}
+
+body {
+	font-family: 'Pontano Sans', sans-serif;
+
+}
+	
+header {
+	width: 100%;
+	height: 150px;
+	font-size: 1.8em;
+}
+
+header ul {
+	text-align: center;
+	padding-top: 60px;
+}
+
+header li {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	color: purple;
+}
+
+.container {
+	width: 100%;
+	font-size: 1.15em;
+}
+
+.container h1 {
+	padding: 15px;
+}
+
+/* Projects */
+
+ img{
+	width: 100%;
+}
+
+section {
+	width: 35%;
+	margin: 0 auto;
+	
+}
+
+footer {
+	clear: both;
+	width: 100%;
+	height: 45px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+	section {
+		width: 100%;
+	}
+}
+
+@media(max-width: 1200px) and (min-width: 701px) {
+	
+	section {
+		width: 50%;
+	}
+	
+}
