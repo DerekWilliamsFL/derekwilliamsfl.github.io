@@ -4,13 +4,6 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	background: url('images/gradient.jpg') no-repeat;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-	background-size: cover;
-	background-position: top center; 
-	background-repeat: no-repeat; 
-	background-attachment: fixed;
 }
 
 body {
