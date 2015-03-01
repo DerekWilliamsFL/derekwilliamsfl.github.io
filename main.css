@@ -8,7 +8,7 @@
 
 body {
 	font-family: 'Pontano Sans', sans-serif;
-
+	text-align: center;
 }
 	
 header {
@@ -28,29 +28,66 @@ header li {
 
 a {
 	text-decoration: none;
-	color: purple;
+	color: #9A12B3;
 }
 
 .container {
 	width: 100%;
-	font-size: 1.15em;
+	font-size: 1.75em;
+	color: #DADFE1;
+	position: relative;
 }
 
 .container h1 {
-	padding: 15px;
+	padding-top: 155px;
+}
+
+.container div {
+	width: 100%;
+	overflow: hidden;
+	-webkit-box-shadow: 0 7px 4px #777;
+	-moz-box-shadow: 0 7px 4px #777;
+	box-shadow: 0 7px 4px #777;
 }
 
 /* Projects */
 
- img{
-	width: 100%;
+.left img {
+	float: left;
 }
 
-section {
-	width: 35%;
-	margin: 0 auto;
-	
+.right img {
+	float: right;
 }
+
+.sttropez {
+	background-color: #e74c3c;
+	position: absolute;
+	z-index: 4;
+}
+
+.flow {
+	background-color: #2ecc71;
+	display: block;
+	position: absolute;
+	top: 475px;
+	z-index: 3;
+}
+
+.candy {
+	background-color: #19B5FE;
+	position: absolute;
+	top: 950px;
+	z-index: 2;
+}
+
+.journey {
+	background-color: #F4B350;
+	position: absolute;
+	top: 1425px;
+	z-index: 1;
+}
+
 
 footer {
 	clear: both;
@@ -60,16 +97,92 @@ footer {
 
 /* Media Queries */
 
-@media screen and (max-width: 700px) {
-	section {
-		width: 100%;
+@media(max-width: 1300px) and (min-width: 757px){
+	
+	.container div {
+		font-size: 0.8em;
+		height: 272px;
 	}
+
+	.container h1 {
+		padding-top: 90px;
+	}
+
+	.container img {
+		height: 272px;
+	}
+
+	.sttropez {
+		background-color: #e74c3c;
+		position: absolute;
+		z-index: 4;
+	}
+
+	.flow {
+		background-color: #2ecc71;
+		display: block;
+		position: absolute;
+		top: 272px;
+		z-index: 3;
+	}
+
+	.candy {
+		background-color: #19B5FE;
+		position: absolute;
+		top: 544px;
+		z-index: 2;
+	}
+
+	.journey {
+		background-color: #F4B350;
+		position: absolute;
+		top: 816px;
+		z-index: 1;
+	}
+
 }
 
-@media(max-width: 1200px) and (min-width: 701px) {
+@media screen and (max-width: 756px) {
 	
-	section {
-		width: 50%;
+	.container div {
+		font-size: 0.4em;
+		height: 120px;
 	}
+	.container img {
+		height: 120px;
+	}
+	.container h1 {
+		padding-top: 40px;
+	}
+
+
 	
+	.sttropez {
+		background-color: #e74c3c;
+		position: absolute;
+		z-index: 4;
+	}
+
+	.flow {
+		background-color: #2ecc71;
+		display: block;
+		position: absolute;
+		top: 120px;
+		z-index: 3;
+	}
+
+	.candy {
+		background-color: #19B5FE;
+		position: absolute;
+		top: 240px;
+		z-index: 2;
+	}
+
+	.journey {
+		background-color: #F4B350;
+		position: absolute;
+		top: 360px;
+		z-index: 1;
+	}
+
 }
