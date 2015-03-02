@@ -17,6 +17,11 @@ header {
 	font-size: 1.8em;
 }
 
+header a {
+	text-decoration: none;
+	color: #9A12B3;
+}
+
 header ul {
 	text-align: center;
 	padding-top: 60px;
@@ -27,8 +32,8 @@ header li {
 }
 
 a {
+	color: white;
 	text-decoration: none;
-	color: #9A12B3;
 }
 
 .container {
