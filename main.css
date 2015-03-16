@@ -68,7 +68,7 @@ a {
 .sttropez {
 	background-color: #e74c3c;
 	position: absolute;
-	z-index: 4;
+	z-index: 5;
 }
 
 .flow {
@@ -76,20 +76,27 @@ a {
 	display: block;
 	position: absolute;
 	top: 475px;
-	z-index: 3;
+	z-index: 4;
 }
 
 .candy {
 	background-color: #19B5FE;
 	position: absolute;
 	top: 950px;
-	z-index: 2;
+	z-index: 3;
 }
 
 .journey {
 	background-color: #F4B350;
 	position: absolute;
 	top: 1425px;
+	z-index: 2;
+}
+
+.league {
+	background-color: #8E44AD;
+	position: absolute;
+	top: 1900px;
 	z-index: 1;
 }
 
@@ -120,7 +127,7 @@ footer {
 	.sttropez {
 		background-color: #e74c3c;
 		position: absolute;
-		z-index: 4;
+		z-index: 5;
 	}
 
 	.flow {
@@ -128,20 +135,27 @@ footer {
 		display: block;
 		position: absolute;
 		top: 272px;
-		z-index: 3;
+		z-index: 4;
 	}
 
 	.candy {
 		background-color: #19B5FE;
 		position: absolute;
 		top: 544px;
-		z-index: 2;
+		z-index: 3;
 	}
 
 	.journey {
 		background-color: #F4B350;
 		position: absolute;
 		top: 816px;
+		z-index: 2;
+	}
+
+	.league {
+		background-color: #8E44AD;
+		position: absolute;
+		top: 1088px;
 		z-index: 1;
 	}
 
@@ -165,7 +179,7 @@ footer {
 	.sttropez {
 		background-color: #e74c3c;
 		position: absolute;
-		z-index: 4;
+		z-index: 5;
 	}
 
 	.flow {
@@ -173,21 +187,27 @@ footer {
 		display: block;
 		position: absolute;
 		top: 120px;
-		z-index: 3;
+		z-index: 4;
 	}
 
 	.candy {
 		background-color: #19B5FE;
 		position: absolute;
 		top: 240px;
-		z-index: 2;
+		z-index: 3;
 	}
 
 	.journey {
 		background-color: #F4B350;
 		position: absolute;
 		top: 360px;
-		z-index: 1;
+		z-index: 2;
 	}
 
+	.league {
+		background-color: #8E44AD;
+		position: absolute;
+		top: 480px;
+		z-index: 1;
+	}
 }
