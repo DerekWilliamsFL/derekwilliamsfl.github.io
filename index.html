@@ -17,7 +17,7 @@
                 Resume
             </div></a>
         </li>
-        <li id="about">
+        <li id="about-link">
             <a href="http://derekwilliamsfl.github.io/Magic-Life/" target="about">
             <div class="link-icon"><img height="32" width="32" src="Images/shell32_24.ico"></div>
             <div class="link-text">
@@ -365,7 +365,11 @@ function initTouchHandler() {
       $("#imdb-window iframe").css('display', 'block');
       appendToDock(this);
     });
-    $("#about").bind('vclick', function (e){
+    $("#about-link").bind('vclick', function (e){
+        var src = $('#about').attr('src');
+        if (src === '') {
+            $('#about').attr('src', 'http://derekwilliamsfl.github.io/Magic-Life/');
+        }
       $("#about-window").css('visibility', 'visible');
       $("#about-window iframe").css('display', 'block');
       appendToDock(this);
