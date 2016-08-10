@@ -339,6 +339,10 @@ function initTouchHandler() {
       appendToDock(this);
     });
     $("#journey-link").bind('vclick', function (e){
+        var src = $('#journey').attr('src');
+        if (src === '') {
+            $('#journey').attr('src', 'http://derekwilliamsfl.github.io/Canvas/');
+        }
       $("#journey-window").css('visibility', 'visible');
       $("#journey-window iframe").css('display', 'block');
       appendToDock(this);
