@@ -31,7 +31,7 @@
                 GitHub
             </div></a>
         </li>
-        <li id="journey">
+        <li id="journey-link">
             <a href="http://derekwilliamsfl.github.io/Canvas/" target=
             "journey">
             <div class="link-icon"><img height="32" width="32" src="Images/character.png"></div>
@@ -39,14 +39,14 @@
                 Journey
             </div></a>
         </li>
-        <li id="imdb">
+        <li id="imdb-link">
             <a href="http://derekwilliamsfl.github.io/imdb-api/" target="imdb">
             <div class="link-icon"><img height="32" width="32" src="Images/imdb.png"></div>
             <div class="link-text">
                 iMDB Search
             </div></a>
         </li>
-        <li id="sttropez">
+        <li id="sttropez-link">
             <a href="http://derekwilliamsfl.github.io/St.Tropez/" target=
             "sttropez">
             <div class="link-icon"><img height="32" width="32" src="Images/purse.png"></div>
@@ -142,7 +142,7 @@
         </header>
         <div class="iframe">
             <iframe id="ditiframe" name="drivein" src=
-            "http://derekwilliamsfl.github.io/Drive-In-Theater/"></iframe>
+            ""></iframe>
         </div>
     </div>
     <div class="application-frame" id="imdb-window">
@@ -158,7 +158,7 @@
         </header>
         <div class="iframe">
             <iframe id="imdb" name="imdb" src=
-            "http://derekwilliamsfl.github.io/imdb-api/"></iframe>
+            ""></iframe>
         </div>
     </div>
     <div class="application-frame" id="journey-window">
@@ -190,7 +190,7 @@
         </header>
         <div class="iframe">
             <iframe id="sttropez" name="sttropez" src=
-            "http://derekwilliamsfl.github.io/St.Tropez/"></iframe>
+            ""></iframe>
         </div>
     </div>
     <div class="start-menu"></div>
@@ -323,32 +323,40 @@ function initTouchHandler() {
           $(selector).animate({
         'marginTop' : "-=1000px",
       }, 200);
-        }
-        else if ($(selector).css('visibility') === 'visible') {
-          console.log('blue');
-        } 
-    });
+        }    });
     $("#email").bind('vclick', function (e){
       $("#email-window").css('visibility', 'visible');
       appendToDock(this);
     });
 
     $("#drivein").bind('vclick', function (e){
+        var src = $('#ditiframe').attr('src');
+        if (src === '') {
+            $('#ditiframe').attr('src', 'http://derekwilliamsfl.github.io/Drive-In-Theater/');
+        }
       $("#drivein-window").css('visibility', 'visible');
       $("#drivein-window iframe").css('display', 'block');
       appendToDock(this);
     });
-    $("#journey").bind('vclick', function (e){
+    $("#journey-link").bind('vclick', function (e){
       $("#journey-window").css('visibility', 'visible');
       $("#journey-window iframe").css('display', 'block');
       appendToDock(this);
     });
-    $("#sttropez").bind('vclick', function (e){
+    $("#sttropez-link").bind('vclick', function (e){
+        var src = $('#sttropez').attr('src');
+        if (src === '') {
+            $('#sttropez').attr('src', 'http://derekwilliamsfl.github.io/St.Tropez/');
+        }
       $("#sttropez-window").css('visibility', 'visible');
       $("#sttropez-window iframe").css('display', 'block');
       appendToDock(this);
     });
-    $("#imdb").bind('vclick', function (e){
+    $("#imdb-link").bind('vclick', function (e){
+        var src = $('#imdb').attr('src');
+        if (src === '') {
+            $('#imdb').attr('src', 'http://derekwilliamsfl.github.io/imdb-api/');
+        }
       $("#imdb-window").css('visibility', 'visible');
       $("#imdb-window iframe").css('display', 'block');
       appendToDock(this);
@@ -373,7 +381,6 @@ function initTouchHandler() {
       var fillwidth = document.getElementById('ditiframe').contentWindow['canvasVideo'];
       console.log(fillwidth);
       if (fillwidth.playing) {
-        console.log("playing, should stop");
         fillwidth.pause();
       }
       $(this).parent().parent().parent().find('.iframe').find('iframe').css('display', 'none');
