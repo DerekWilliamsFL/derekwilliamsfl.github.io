@@ -143,7 +143,7 @@ function initTouchHandler() {
       $('contactform').replaceWith(originalState);
     });
     $("#drivein-window .close").bind('vclick', function (e){
-      var fillwidth = document.getElementById('drivein-window').contentWindow['canvasVideo'];
+      var fillwidth = document.getElementById('drivein').contentWindow['canvasVideo'];
       if (fillwidth.playing) {
         fillwidth.pause();
       }
