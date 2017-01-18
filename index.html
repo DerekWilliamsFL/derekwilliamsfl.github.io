@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link href="computer.gif" rel="shortcut icon">
+    <title>Derek Williams</title>
+    <link href="css-reset.css" rel="Stylesheet">
+    <link href="MTG-Life.css" rel="Stylesheet">
+</head>
+<body>
+    <ul class="desktop-icons">
+        <li id="resume">
+            <a href="https://drive.google.com/file/d/0BxCxhGImJ05_dGpNalN6TE02MDQ/view?usp=sharing" target="_blank">
+            <div class="link-icon"><img  height="32" width="32" src="Images/shell32_35.ico"></div>
+            <div class="link-text">
+                Resume
+            </div></a>
+        </li>
+        <li id="about-link">
+            <a href="http://derekwilliamsfl.github.io/Magic-Life/" target="about">
+            <div class="link-icon"><img height="32" width="32" src="Images/shell32_24.ico"></div>
+            <div class="link-text">
+                About Me
+            </div></a>
+        </li>
+        <li id="github">
+            <a href="https://github.com/DerekWilliamsFL" target="_blank">
+            <div class="link-icon"><img  height="32" width="32" src="Images/shell32_32.ico"></div>
+            <div class="link-text">
+                GitHub
+            </div></a>
+        </li>
+        <li id="journey-link">
+            <a href="http://derekwilliamsfl.github.io/Canvas/" target=
+            "journey">
+            <div class="link-icon"><img height="32" width="32" src="Images/character.png"></div>
+            <div class="link-text">
+                Journey
+            </div></a>
+        </li>
+        <li id="imdb-link">
+            <a href="http://derekwilliamsfl.github.io/imdb-api/" target="imdb">
+            <div class="link-icon"><img height="32" width="32" src="Images/imdb.png"></div>
+            <div class="link-text">
+                iMDB Search
+            </div></a>
+        </li>
+        <!--<li id="sttropez-link">
+            <a href="http://derekwilliamsfl.github.io/St.Tropez/" target=
+            "sttropez">
+            <div class="link-icon"><img height="32" width="32" src="Images/purse.png"></div>
+            <div class="link-text">
+                St.Tropez
+            </div></a>
+        </li>-->
+        <li id="drivein-link">
+            <a href="http://derekwilliamsfl.github.io/Drive-In-Theater/"
+            target="drivein">
+            <div class="link-icon"><img height="32" src="Images/dit.png" width=
+            "32"></div>
+            <div class="link-text">
+                Drive In
+            </div></a>
+        </li>
+        <li id="email">
+            <a>
+            <div class="link-icon"><img height="32" src="Images/email.png"
+            width="32"></div>
+            <div class="link-text">
+                E-Mail
+            </div></a>
+        </li>
+    </ul>
+    <div class="application-frame" id="email-window">
+        <header class="application-controlbar">
+            <div class="application-title">
+                <img height="16" src="Images/email.png" width="16">
+                <span>Email</span>
+            </div>
+            <div class="application-button-group">
+                <button class="minimize"></button> <button class=
+                "close"></button>
+            </div>
+        </header>
+        <form id="contactform" name="contactform">
+            <div class="emailform">
+                <span>Name:</span> <input name="name" type="text" required>
+            </div>
+            <div style="clear: both;"></div>
+            <div class="emailform">
+                <span>Email:</span> <input name="_replyto" type="email" required>
+            </div>
+            <div style="clear: both;"></div>
+            <textarea data-role="none" name="message" required></textarea>
+            <div class="emailform">
+                <input id="sendMessage" type="submit">
+            </div>
+            <div id="sendprogress"></div>
+        </form>
+    </div>
+    <div class="application-frame" id="about-window">
+        <header class="application-controlbar">
+            <div class="application-title">
+                <img height="16" src="Images/shell32_24.ico" width="16">
+                <span>About Me</span>
+            </div>
+            <div class="application-button-group">
+                <button class="minimize"></button> <button class=
+                "close"></button>
+            </div>
+        </header>
+        <div class="iframe">
+            <iframe id="about" name="about" src=
+            "http://derekwilliamsfl.github.io/Magic-Life/"></iframe>
+        </div>
+    </div>
+    <div class="application-frame" id="resume-window">
+        <header class="application-controlbar">
+            <div class="application-title">
+                <img height="16" src="Images/shell32_35.ico" width="16">
+                <span>Resume</span>
+            </div>
+            <div class="application-button-group">
+                <button class="minimize"></button> <button class=
+                "close"></button>
+            </div>
+        </header>
+        <div class="iframe">
+        </div>
+    </div>
+    <div class="application-frame" id="drivein-window">
+        <header class="application-controlbar">
+            <div class="application-title">
+                <img height="16" src="Images/dit.png" width="16"> <span>Drive
+                In Theater</span>
+            </div>
+            <div class="application-button-group">
+                <button class="minimize"></button> <button class=
+                "close"></button>
+            </div>
+        </header>
+        <div class="iframe">
+            <iframe id="drivein" name="drivein" src=
+            ""></iframe>
+        </div>
+    </div>
+    <div class="application-frame" id="imdb-window">
+        <header class="application-controlbar">
+            <div class="application-title">
+                <img height="16" src="Images/imdb.png" width="16"> <span>iMDB
+                Search</span>
+            </div>
+            <div class="application-button-group">
+                <button class="minimize"></button> <button class=
+                "close"></button>
+            </div>
+        </header>
+        <div class="iframe">
+            <iframe id="imdb" name="imdb" src=
+            ""></iframe>
+        </div>
+    </div>
+    <div class="application-frame" id="journey-window">
+        <header class="application-controlbar">
+            <div class="application-title">
+                <img height="16" src="Images/character.png" width="16">
+                <span>Journey in Canvas</span>
+            </div>
+            <div class="application-button-group">
+                <button class="minimize"></button> <button class=
+                "close"></button>
+            </div>
+        </header>
+        <div class="iframe">
+            <iframe id="journey" name="journey" src=
+            "http://derekwilliamsfl.github.io/Canvas/"></iframe>
+        </div>
+    </div>
+    <!--<div class="application-frame" id="sttropez-window">
+        <header class="application-controlbar">
+            <div class="application-title">
+                <img height="16" src="Images/purse.png" width="16"> <span>St.
+                Tropez</span>
+            </div>
+            <div class="application-button-group">
+                <button class="minimize"></button> <button class=
+                "close"></button>
+            </div>
+        </header>
+        <div class="iframe">
+            <iframe id="sttropez" name="sttropez" src=
+            ""></iframe>
+        </div>
+    </div>-->
+    <div class="start-menu"></div>
+    <div class="bottom-dock">
+        <button class="start-button"><img  height="32" width="32" class="win95start" src=
+        "Images/win95start.gif"> <span>Start</span></button>
+        <div class="notif" id="inset-notif">
+            <img height="32" width="32" src="Images/sound.gif"><span id="time">12:34</span>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="index.js"></script>
+
+
+</body>
+</html>
