@@ -1,187 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
+
 <head>
-    <meta content="text/html; charset=utf-8" http-equiv="content-type">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <link href="computer.gif" rel="shortcut icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Derek Williams</title>
-    <link href="css-reset.css" rel="Stylesheet">
-    <link href="MTG-Life.css" rel="Stylesheet">
+	<link rel="shortcut icon" href="computer.gif" type="image/x-icon">
+	<link rel="icon" href="computer.gif" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <ul class="desktop-icons">
-        <li id="resume">
-            <a href="https://drive.google.com/file/d/0BxCxhGImJ05_MUxzVHNyX01xdTA/view?usp=sharing" target="_blank">
-            <div class="link-icon"><img  height="32" width="32" src="Images/shell32_35.ico"></div>
-            <div class="link-text">
-                Resume
-            </div></a>
-        </li>
-        <li id="about-link">
-            <a href="http://derekwilliamsfl.github.io/Magic-Life/" target="about">
-            <div class="link-icon"><img height="32" width="32" src="Images/shell32_24.ico"></div>
-            <div class="link-text">
-                About Me
-            </div></a>
-        </li>
-        <li id="github">
-            <a href="https://github.com/DerekWilliamsFL" target="_blank">
-            <div class="link-icon"><img  height="32" width="32" src="Images/shell32_32.ico"></div>
-            <div class="link-text">
-                GitHub
-            </div></a>
-        </li>
-        <li id="journey-link">
-            <a href="http://derekwilliamsfl.github.io/Canvas/" target=
-            "journey">
-            <div class="link-icon"><img height="32" width="32" src="Images/character.png"></div>
-            <div class="link-text">
-                Journey
-            </div></a>
-        </li>
-        <li id="imdb-link">
-            <a href="http://derekwilliamsfl.github.io/imdb-api/" target="imdb">
-            <div class="link-icon"><img height="32" width="32" src="Images/imdb.png"></div>
-            <div class="link-text">
-                iMDB Search
-            </div></a>
-        </li>
-        <li id="drivein-link">
-            <a href="http://derekwilliamsfl.github.io/Drive-In-Theater/"
-            target="drivein">
-            <div class="link-icon"><img height="32" src="Images/dit.png" width=
-            "32"></div>
-            <div class="link-text">
-                Drive In
-            </div></a>
-        </li>
-        <li id="email">
-            <a>
-            <div class="link-icon"><img height="32" src="Images/email.png"
-            width="32"></div>
-            <div class="link-text">
-                E-Mail
-            </div></a>
-        </li>
-    </ul>
-    <div class="application-frame" id="email-window">
-        <header class="application-controlbar">
-            <div class="application-title">
-                <img height="16" src="Images/email.png" width="16">
-                <span>Email</span>
-            </div>
-            <div class="application-button-group">
-                <button class="minimize"></button> <button class=
-                "close"></button>
-            </div>
-        </header>
-        <form id="contactform" name="contactform">
-            <div class="emailform">
-                <span>Name:</span> <input name="name" type="text" required>
-            </div>
-            <div style="clear: both;"></div>
-            <div class="emailform">
-                <span>Email:</span> <input name="_replyto" type="email" required>
-            </div>
-            <div style="clear: both;"></div>
-            <textarea data-role="none" name="message" required></textarea>
-            <div class="emailform">
-                <input id="sendMessage" type="submit">
-            </div>
-            <div id="sendprogress"></div>
-        </form>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <div class="application-frame" id="about-window">
-        <header class="application-controlbar">
-            <div class="application-title">
-                <img height="16" src="Images/shell32_24.ico" width="16">
-                <span>About Me</span>
-            </div>
-            <div class="application-button-group">
-                <button class="minimize"></button> <button class=
-                "close"></button>
-            </div>
-        </header>
-        <div class="iframe">
-            <iframe id="about" name="about" src=
-            "http://derekwilliamsfl.github.io/Magic-Life/"></iframe>
+
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Derek Williams</h1>
+            <h2>Front End Web Developer</h2>
+            <a href="https://drive.google.com/open?id=132DjcKa0ps7DRJYcu_wZ8QKCiZPw3goTPvvPyPGTyE4" class="btn-rounded-white">View Resume</a>
+        </div>
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
         </div>
     </div>
-    <div class="application-frame" id="resume-window">
-        <header class="application-controlbar">
-            <div class="application-title">
-                <img height="16" src="Images/shell32_35.ico" width="16">
-                <span>Resume</span>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        My name is Derek Williams, and I am a Front End Developer. I have experience with HTML5, CSS3, Javascript (jQuery, Angular, Vue), and some C# and ASP.NET. I currently live in Orlando, FL, but am willing to relocate to anywhere in the U.S.
+                    </p>
+                </div>
             </div>
-            <div class="application-button-group">
-                <button class="minimize"></button> <button class=
-                "close"></button>
-            </div>
-        </header>
-        <div class="iframe">
         </div>
     </div>
-    <div class="application-frame" id="drivein-window">
-        <header class="application-controlbar">
-            <div class="application-title">
-                <img height="16" src="Images/dit.png" width="16"> <span>Drive
-                In Theater</span>
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="October 2016 – April 2017">
+                <h3>Ascentus</h3>
+                <h4>Front End Web Developer</h4>
+                <p>
+                   At Ascentus I cleaned up the company’s existing codebases and dove deep into the redesign of the company’s flagship website.
+                   <ul>
+                    <li>Mentored a Junior Backend Developer regarding best coding practices and using our workflow.</li>
+                    <li>Learned many newer technologies and ideologies from my coworkers and the stack we used.</li>
+                    <li>Customized Wordpress functionality with ACF for my content editors in my previous position depending on business needs.</li>
+                   </ul>
+                </p>
             </div>
-            <div class="application-button-group">
-                <button class="minimize"></button> <button class=
-                "close"></button>
+
+            <div data-date="October 2015 – October 2016">
+                <h3>Worldwide Interactive Services</h3>
+                <h4>Web Developer Intern</h4>
+                <p>
+                   I was hired to maintain and implement new features to Worldwide’s current consumer facing Mobile App portal utilizing PhoneGap and AngularJS. During the course of my employment I also worked extensively on their internet portal using C# and ASP.NET.
+                   <ul>
+                        <li>Responsible for maintaining, optimizing, and implementing key features to the Mobile Banking App.</li>
+                        <li>Made optimization a priority by cutting code bloat, avoiding watchers, and using Chrome DevTools.</li>
+                        <li>Learned new pre-processors CoffeeScript and HAML, as well as C# and ASP.NET during the project.</li>
+                   </ul>
+                </p>
             </div>
-        </header>
-        <div class="iframe">
-            <iframe id="drivein" name="drivein" src=
-            ""></iframe>
         </div>
     </div>
-    <div class="application-frame" id="imdb-window">
-        <header class="application-controlbar">
-            <div class="application-title">
-                <img height="16" src="Images/imdb.png" width="16"> <span>iMDB
-                Search</span>
-            </div>
-            <div class="application-button-group">
-                <button class="minimize"></button> <button class=
-                "close"></button>
-            </div>
-        </header>
-        <div class="iframe">
-            <iframe id="imdb" name="imdb" src=
-            ""></iframe>
-        </div>
-    </div>
-    <div class="application-frame" id="journey-window">
-        <header class="application-controlbar">
-            <div class="application-title">
-                <img height="16" src="Images/character.png" width="16">
-                <span>Journey in Canvas</span>
-            </div>
-            <div class="application-button-group">
-                <button class="minimize"></button> <button class=
-                "close"></button>
-            </div>
-        </header>
-        <div class="iframe">
-            <iframe id="journey" name="journey" src=
-            "http://derekwilliamsfl.github.io/Canvas/"></iframe>
-        </div>
-    </div>
-    <div class="start-menu"></div>
-    <div class="bottom-dock">
-        <button class="start-button"><img  height="32" width="32" class="win95start" src=
-        "Images/win95start.gif"> <span>Start</span></button>
-        <div class="notif" id="inset-notif">
-            <img height="32" width="32" src="Images/sound.gif"><span id="time">12:34</span>
-        </div>
-    </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<script src="index.js"></script>
 
 
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+
+                 <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/portfolio.png" />
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Former Portfolio App</h3>
+                        <p>
+                           My former portfolio mimicked Window 95 to display my projects.
+                        </p>
+                        <a href="http://derekwilliamsfl.github.io/League-API/">View Project</a>
+                    </div>
+
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/journey.png" />
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Journey</h3>
+                        <p>
+                           I created a collectible game utilizing Canvas for the first time, using Canvas to generate 2D graphics.
+                        </p>
+                        <a href="http://derekwilliamsfl.github.io/Canvas/">View Project</a>
+                    </div>
+
+                </div>
+
+
+               
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>ES6</li>
+            <li>Node</li>
+            <li>Angular</li>
+            <li>C#</li>
+            <li>WordPress</li>
+            <li>PostCSS</li>
+            <li>SASS</li>
+        </ul>
+    </div>
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/DerekWilliamsFL@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="DerekWilliamsFL@gmail.com" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2017 Derek Williams
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/DerekWilliamsFL" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
+
 </html>
